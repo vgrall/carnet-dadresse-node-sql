@@ -1,6 +1,8 @@
 //appel des dépendances
 import express from "express";
 import router from "./router.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const PORT = 3000;
 const app = express();

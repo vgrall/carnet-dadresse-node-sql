@@ -8,6 +8,9 @@
             <li>
                 <input type="checkbox" name="contactsToDelete[]" value="<%= result[i].id %>">
                 <span class="contact"><%= result[i].firstName.toUpperCase() %> <%= result[i].lastName %> </span>
+                <img width="100" src="/images/<%= result[i].image %>"
+                    alt="Photo de <%= result[i].firstName %> <%= result[i].lastName %>">
+
                 <a href="/contacts/<%= result[i].id %>">
                     <i class="far fa-eye"></i>
                 </a>

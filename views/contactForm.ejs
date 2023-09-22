@@ -1,7 +1,10 @@
 <%- include('header') -%>
 <main>
     <h2><%= title %></h2>
-    <form action='<%= action %>' method="post">
+    <form action='<%= action %>' method="post" enctype="multipart/form-data">
+        <p>
+            <label for="image">Photo</label><input id="image" type="file" name="image" />
+        </p>
         <p>
             <label for="civilite">Civilité</label>
             <select name='civilite' id="civilite">
